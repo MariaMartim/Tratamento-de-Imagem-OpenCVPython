@@ -18,9 +18,9 @@ gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel) #a função gradien
 opening = cv2.morphologyEx(img_opening, cv2.MORPH_OPEN, kernel) #função de abertura da erosão pra dilatação utilizando o kernel, armazenando na variavel "opening"
 closing = cv2.morphologyEx(img_closing, cv2.MORPH_CLOSE, kernel) #função de abertura da dilatação pra erosão utilizando o kernel, armazenando na variavel "closing"
 
-cv2_imshow(img)
-cv2_imshow(erosion)
-cv2_imshow(dilation)
-cv2_imshow(opening)
-cv2_imshow(closing)
-cv2_imshow(gradient)
+cv2_imshow(img) #exibe imagem inicial sem modificações
+cv2_imshow(erosion) #exibe a imagem com efeito de erosão
+cv2_imshow(dilation) #exibe a imagem com efeito da dilatação
+cv2_imshow(opening) #exibe a imagem com efeito de abertura
+cv2_imshow(closing) #exibe a imagem com efeito de fechamento
+cv2_imshow(gradient) #exibe a imagem com efeito de gradiente
