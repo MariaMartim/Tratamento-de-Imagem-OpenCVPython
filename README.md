@@ -1,1 +1,1 @@
-
+Neste código usamos as bibliotecas do cv2 para a leitura e manipulação das imagens e numpy para trabalharmos com matrizes no kernel. Este repositório trabalhou com os efeitos de manipulação de imagens do OpenCV como a abertura, fechamento, gradiente, erosão e dilatação. Com isso 
