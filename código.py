@@ -19,8 +19,8 @@ opening = cv2.morphologyEx(img_opening, cv2.MORPH_OPEN, kernel) #função de abe
 closing = cv2.morphologyEx(img_closing, cv2.MORPH_CLOSE, kernel) #função de abertura da dilatação pra erosão utilizando o kernel, armazenando na variavel "closing"
 
 cv2_imshow(img) #exibe imagem inicial sem modificações
-cv2_imshow(erosion) #exibe a imagem com efeito de erosão
-cv2_imshow(dilation) #exibe a imagem com efeito da dilatação
-cv2_imshow(opening) #exibe a imagem com efeito de abertura
-cv2_imshow(closing) #exibe a imagem com efeito de fechamento
-cv2_imshow(gradient) #exibe a imagem com efeito de gradiente
+cv2_imshow(erosion) #exibe a imagem da variável "erosion", que foi aplicado o efeito de erosão à imagem original
+cv2_imshow(dilation) #exibe a imagem da variável "dilation", que foi aplicado o efeito de dilatação à imagem original
+cv2_imshow(opening) #exibe a imagem da variável "opening", que foi aplicado o efeito de abertura à imagem com ruídos
+cv2_imshow(closing) #exibe a imagem da variável "closing", que foi aplicado o efeito de fechamento à imagem com furos
+cv2_imshow(gradient) #exibe a imagem da variável "gradient", que foi aplicado o efeito de gradiente à imagem original
