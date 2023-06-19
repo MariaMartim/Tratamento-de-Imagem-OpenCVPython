@@ -12,7 +12,7 @@ kernel = np.ones((5,5),np.uint8) #matriz do kernel 5x5 preenchido por 1 e indica
 print(kernel) #apresenta o kernel para visualização
 
 erosion = cv2.erode(img,kernel,iterations = 2) #aplica a erosão usando o kernel e o "iterations" corresponde a quantidade de vezes que a erosão é utilizada. resultado armazenado na variavel "erosion"
-dilation = cv2.dilate(img,kernel,iterations = 2) #mesma aplicação, apenas usando a variavel "dilation"
+dilation = cv2.dilate(img,kernel,iterations = 2) #mesma aplicação, apenas usando a função "dilation"
 
 gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel) #a função gradiente destaca os contornos da imagem, subtração da imagem dilatada com a erodida. nesta função ele aplica utilizando a variavel kernel e armazena na variavel "gradient"
 opening = cv2.morphologyEx(img_opening, cv2.MORPH_OPEN, kernel) #função de abertura da erosão pra dilatação utilizando o kernel, armazenando na variavel "opening"
